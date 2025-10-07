@@ -27,7 +27,7 @@ const routes = [
 const MainNavigation = () => {
   const pathname = usePathname();
   return (
-    <Container className="sticky top-0 pb-4 z-[50] bg-white shadow pt-4">
+    <Container className="sticky top-0 pb-4 z-40 bg-white shadow pt-4">
       <HStack
         as="ul"
         className="gap-x-8 [&>*]:hover:text-amber-500 [&>*]:hover:cursor-pointer font-semibold text-slate-700"

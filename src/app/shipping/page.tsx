@@ -2,13 +2,10 @@ import Breadcrumbs from "@/components/shared/Breadcrumb";
 import Container from "@/components/shared/Container";
 import React from "react";
 
-const breadCumbs = [{ href: "", label: "Shipping & Returns" }];
-
 const ShippingAndReturnsPage = () => {
   return (
     <Container className="py-8">
-
-      <Breadcrumbs items={breadCumbs} />
+      <Breadcrumbs items={[{ href: "", label: "Shipping & Returns" }]} />
 
       <header>
         <h1 className="font-bold text-2xl">Shipping & Returns</h1>
