@@ -39,14 +39,15 @@ const Carousel = () => {
           transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
-        {slides?.map((item) => (
-          <div className={`${item?.color} h-[32rem] w-full shrink-0`} />
+        {slides?.map((item, index) => (
+          <div key={index} className={`${item?.color} h-[32rem] w-full shrink-0`} />
         ))}
       </div>
 
       <HStack className="absolute bottom-4 inset-x-0 w-max mx-auto bg-black/10 p-2 rounded-full">
         {slides?.map((_, index) => (
           <button
+          key={index}
             onClick={() => setCurrentSlide(index)}
             className={`cursor-pointer size-3 rounded-full bg-white transition-all duration-700 ${
               index === currentSlide ? "w-8" : ""

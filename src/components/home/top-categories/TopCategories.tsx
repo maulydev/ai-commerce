@@ -68,7 +68,7 @@ const TopCategories = () => {
       </HStack>
 
       <Card className="grid grid-cols-5 mt-6">
-        {topCategories?.map(({ image, label, path }) => (
+        {topCategories?.map(({ label, path }) => (
           <HStack key={path.slice(1)} className="border-[0.5px] p-6 text-sm">
             <div className="space-y-6 shrink-0 flex-1">
               <p>#{label}</p>

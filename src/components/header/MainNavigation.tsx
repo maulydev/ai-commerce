@@ -4,7 +4,6 @@ import Link from "next/link";
 import Container from "../shared/Container";
 import HStack from "../shared/HStack";
 import { usePathname } from "next/navigation";
-import Card from "../shared/Card";
 
 const routes = [
   {
