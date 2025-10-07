@@ -8,7 +8,7 @@ import Carousel from "./Carousel";
 
 const Hero = () => {
   return (
-    <Container className="py-8">
+    <Container className="pt-8">
       <HStack className="flex-1 h-[32rem]">
         <Card className="h-full w-96 py-4">
           <VStack>

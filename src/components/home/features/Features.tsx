@@ -40,7 +40,7 @@ const Features = () => {
   ];
 
   return (
-    <Container className="py-8">
+    <Container>
       <Card className="p-8">
         <HStack className="justify-between gap-x-8">
           {features.map((feature, idx) => (
